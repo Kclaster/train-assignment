@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="http://momentjs.com/downloads/moment.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="title">Platform 9 3/4</h1>
+    <h3 class="title">Because the title explains itself.</h3>
+  </header>
+  <div class="display-container">
+    <h2 class="section-title">Current Train Schedule</h2>
+    <table class="table table-dark">
+      <thead>
+        <th>Name</th>
+        <th>Destination</th>
+        <th>Time (CST.)</th>
+        <th>Frequency</th>
+        <th>Minutes Away</th>
+        <th>Next Arrival</th>
+      </thead>
+      <tbody id="schedule-section">
+
+      </tbody>
+    </table>
+
+  </div>
+  <div class="form-container">
+    <h2 class="section-title">Add a Train</h2>
+    <form>
+      <div class="form-group">
+        <label>Train Name</label>
+        <input class="field" id="name-input" type="text" required/>
+      </div>
+      <div class="form-group">
+        <label>Destination</label>
+        <input class="field" id="destination-input" type="text" required/>
+      </div>
+      <div class="form-group">
+        <label>First Train Time</label>
+        <input class="field" id="time-input" type="time" required/>
+      </div>
+      <div class="form-group">
+        <label>Frequency</label>
+        <input class="field" id="frequency-input" type="number" required/>
+      </div class="form-group">
+      <input class="button" id="submit" type="submit" value="Add That Train"></submit>
+    </form>
+  </div>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
