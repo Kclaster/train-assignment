@@ -3,7 +3,7 @@
  var config = {
     apiKey: "AIzaSyD6oM9Hw6ofNtkh3ecrs8cKU3QzwPfBoxY",
     authDomain: "train-4b7c1.firebaseapp.com",
-    databaseURL: "https://train-4b7c1.firebaseio.com",
+    databaseURL: "//train-4b7c1.firebaseio.com",
     projectId: "train-4b7c1",
     storageBucket: "train-4b7c1.appspot.com",
     messagingSenderId: "72852055940"
